@@ -8,5 +8,11 @@
            sh 'ant -f build.xml -v'
          }
         }
+       
+       stage('test') {
+         steps {
+          echo 'Testings...'
+         }
+       }
       }  
     }
